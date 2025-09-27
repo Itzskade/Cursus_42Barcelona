@@ -14,16 +14,11 @@
 
 void	*ft_calloc(size_t num, size_t size)
 {
-	unsigned char	*ptr;
-	unsigned char	*buf;
-	size_t			total_size;
+	void	*buf;
 
-	total_size = num * size;
-	buf = malloc(sizeof(*buf) * (total_size));
+	buf = malloc(num * size);
 	if (!buf)
 		return (NULL);
-	ptr = buf;
-	while (total_size--)
-		*ptr++ = '\0';
-	return ((void *)buf);
+	ft_memset(buf, 0, num * size);
+	return (buf);
 }

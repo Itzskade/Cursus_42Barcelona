@@ -180,7 +180,7 @@ int	main(void)
    |       ft_atoi.c        |
    +========================+ */
 	puts("--------FT_ATOI--------");
-	printf("ft_atoi(\"42\")\n -Expected: 42\n +Result: %d\n", ft_atoi("42"));
+	printf("ft_atoi(\"42\")\n -Expected: 42\n +Result: %d\n", ft_atoi("  42"));
 	printf("ft_atoi(\"-404\")\n -Expected: -404\n +Result: %d\n", ft_atoi("-404"));
 
 /* +========================+

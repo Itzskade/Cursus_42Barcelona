@@ -1,7 +1,11 @@
+.PHONY: all clean fclean re bonus
+
 NAME = libft.a
+HEADER = libft.h
+
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-INCLUDES = libft.h
+
 AR = ar
 ARFLAGS = rcs
 
@@ -21,43 +25,22 @@ BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_
 OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(BONUS:.c=.o)
 
-# ASCII Art
-ASCII: $(NAME) 
-	@echo "\033[1;31m  _      \033[1;33m ___  \033[1;32m ____   \033[1;34m _____  \033[1;35m _____  \033[0m\n\
-\033[1;31m | |     \033[1;33m|_ _| \033[1;32m| __ )  \033[1;34m|  ___| \033[1;35m|_   _| \033[0m\n\
-\033[1;31m | |     \033[1;33m | |  \033[1;32m|  _ \  \033[1;34m| |__    \033[1;35m | |   \033[0m\n\
-\033[1;31m | |___  \033[1;33m | |  \033[1;32m| |_) | \033[1;34m|  __|   \033[1;35m | |   \033[0m\n\
-\033[1;31m |_____| \033[1;33m|___| \033[1;32m|____/  \033[1;34m|_|      \033[1;35m |_|   \033[0m\n\
-	       \033[1;36m    S   K   A   D   E\033[0m\n"
+ifeq ($(MAKECMDGOALS),bonus)
+OBJ += $(OBJ_BONUS)
+endif
 
-# Regla para compilar .c a .o
-%.o: %.c $(INCLUDES) Makefile
-	@$(CC) $(CFLAGS) -c $< -o $@
-	@echo "\033[1;32m[✓] Compilado:\033[0m \033[1;34m$< \033[1;31m→ \033[0m\033[1;35m$@\033[0m"
-
-# Regla principal
-all: $(NAME) ASCII
-
-# Crear librería
+all: $(NAME)
+bonus: $(NAME)
 $(NAME): $(OBJ)
-	@$(AR) $(ARFLAGS) $(NAME) $(OBJ)
-	@echo "Librería \033[4;31m$(NAME)\033[0m creada."
+	$(AR) $(ARFLAGS) $@ $^
 
-# Bonus
-bonus: $(OBJ_BONUS) ASCII
-	@$(AR) $(ARFLAGS) $(NAME) $(OBJ_BONUS)
-	@echo "Bonus añadidos a \033[4;31m$(NAME)\033[0m."
+%.o: %.c $(HEADER) Makefile
+	$(CC) $(CFLAGS) -c $< -o $@
 
-# Limpiar .o
 clean:
-	@rm -rf $(OBJ) $(OBJ_BONUS)
-	@echo "Todos los archivos \033[1;36m.o\033[0m eliminados"
-
-# Limpiar todo
+	rm -f $(OBJ) $(OBJ_BONUS)
+	
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 
-# Rehacer todo
 re: fclean all
-
-.PHONY: all clean fclean re ASCII

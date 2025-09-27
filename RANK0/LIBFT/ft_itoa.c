@@ -31,8 +31,6 @@ char	*fill_num(char *str, int n)
 		*str++ = '-';
 		n = -n;
 	}
-	else
-		n = n;
 	if (n > 9)
 		str = fill_num(str, n / 10);
 	*str++ = ((n % 10) + '0');
