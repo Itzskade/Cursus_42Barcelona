@@ -1,0 +1,6 @@
+test*
+includes
+srcs
+*.swp
+*.o
+a.out
