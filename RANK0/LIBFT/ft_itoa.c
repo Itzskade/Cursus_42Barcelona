@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#define MAX_DIGITS 12
-/*int	len_num(int n)
+//#define MAX_DIGITS 12
+int	len_num(int n)
 {
 	long	nb;
 
@@ -22,7 +22,7 @@
 	if (nb < 10)
 		return (1);
 	return (1 + len_num(nb / 10));
-}*/
+}
 
 char	*fill_num(char *str, int n)
 {
@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	str = malloc(MAX_DIGITS);
+	str = malloc(len_num(n) + 1);
 	if (!str)
 		return (NULL);
 	ptr = fill_num(str, n);
