@@ -57,8 +57,8 @@ int	main(void)
 	len = ft_printf("Pointer: %p\n", p);
 	ft_printf("Se imprimieron %d caracteres.\n", len);
 	
-	len = printf("Pointer: %p\n", p1);
-	printf("Se imprimieron %d caracteres.\n\n", len);
+	len = ft_printf("Pointer: %p\n", p1);
+	ft_printf("Se imprimieron %d caracteres.\n\n", len);
 
 	printf("+=================+\n");
 	printf("| ORIGINAL PRINTF |\n");
@@ -70,6 +70,9 @@ int	main(void)
 	len = printf("String: %s\n", s);
 	printf("Se imprimieron %d caracteres.\n", len);
 
+	len = printf("String: %s\n", s1);
+	printf("Se imprimieron %d caracteres.\n", len);
+	
 	len = printf("Digit: %d\n", d);
 	printf("Se imprimieron %d caracteres.\n", len);
 
