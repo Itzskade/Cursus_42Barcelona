@@ -31,7 +31,7 @@ int		ft_printf_s(char *s)
 	return (count);
 }
 
-int		ft_printf_di(int d)
+int		ft_printf_d(int d)
 {
 	int		count;
 	long	l;
@@ -45,7 +45,7 @@ int		ft_printf_di(int d)
 		l = -l;
 	}
 	if (l > 9)
-		count += ft_printf_di(l / 10);
+		count += ft_printf_d(l / 10);
 	c = (l % 10) + '0';
 	count += write(1, &c, 1);
 	return (count);
