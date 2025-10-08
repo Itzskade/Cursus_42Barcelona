@@ -18,7 +18,7 @@ int		ft_format(char format, va_list ap)
 		return (ft_printf_c(va_arg(ap, int)));
 	if (format == 's')
 		return (ft_printf_s(va_arg(ap, char *)));
-	if (format == 'd' || c == 'i')
+	if (format == 'd' || format == 'i')
 		return (ft_printf_d(va_arg(ap, int)));
 	if (format == 'u')
 		return (ft_printf_u(va_arg(ap, unsigned int)));
