@@ -29,7 +29,7 @@ int		ft_printf(char const *format, ...);
 
 int		ft_printf_c(char c);
 int		ft_printf_s(char *s);
-int		ft_printf_di(int d);
+int		ft_printf_d(int d);
 int		ft_printf_u(unsigned int u);
 
 /* +=====================+
