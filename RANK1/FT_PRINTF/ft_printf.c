@@ -12,23 +12,23 @@
 
 #include "ft_printf.h"
 
-int		ft_format(char c, va_list ap)
+int		ft_format(char format, va_list ap)
 {
-	if (c == 'c')
+	if (format == 'c')
 		return (ft_printf_c(va_arg(ap, int)));
-	if (c == 's')
+	if (format == 's')
 		return (ft_printf_s(va_arg(ap, char *)));
-	if (c == 'd' || c == 'i')
+	if (format == 'd' || c == 'i')
 		return (ft_printf_d(va_arg(ap, int)));
-	if (c == 'u')
+	if (format == 'u')
 		return (ft_printf_u(va_arg(ap, unsigned int)));
-	if (c == 'x')
+	if (format == 'x')
 		return (ft_printf_x(va_arg(ap, unsigned int), 0));
-	if (c == 'X')
+	if (format == 'X')
 		return (ft_printf_x(va_arg(ap, unsigned int), 1));
-	if (c == 'p')
+	if (format == 'p')
 		return (ft_printf_p(va_arg(ap, void *)));
-	if (c == '%')
+	if (format == '%')
 		return (ft_printf_c('%'));
 	return (0);
 }
