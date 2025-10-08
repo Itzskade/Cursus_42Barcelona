@@ -19,15 +19,13 @@ int		ft_printf_c(char c)
 
 int		ft_printf_s(char *s)
 {
-	int 	i;
 	int 	count;
 
 	if (!s)
 		return (ft_printf_s("(null)"));
-	i = 0;
 	count = 0;
-	while (s[i])
-		count += ft_printf_c(s[i++]);
+	while (*s)
+		count += ft_printf_c(*s++);
 	return (count);
 }
 
@@ -41,13 +39,13 @@ int		ft_printf_d(int d)
 	count = 0;
 	if (l < 0)
 	{
-		count += write(1, "-", 1);
+		count += ft_printf_c('-');
 		l = -l;
 	}
 	if (l > 9)
 		count += ft_printf_d(l / 10);
 	c = (l % 10) + '0';
-	count += write(1, &c, 1);
+	count += ft_printf_c(c);
 	return (count);
 }
 
@@ -60,6 +58,6 @@ int		ft_printf_u(unsigned int u)
 	if (u > 9)
 		count += ft_printf_u(u / 10);
 	c = (u % 10) + '0';
-	count += write(1, &c, 1);
+	count += ft_printf_c(c);
 	return (count);
 }
