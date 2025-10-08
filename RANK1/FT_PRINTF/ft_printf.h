@@ -20,7 +20,7 @@
  * |     ft_printf.c     |
  * +=====================+ */
 
-int		ft_format(char c, va_list ap);
+int		ft_format(char format, va_list ap);
 int		ft_printf(char const *format, ...);
 
 /* +=====================+
