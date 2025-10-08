@@ -19,7 +19,7 @@ int		ft_format(char c, va_list ap)
 	if (c == 's')
 		return (ft_printf_s(va_arg(ap, char *)));
 	if (c == 'd' || c == 'i')
-		return (ft_printf_di(va_arg(ap, int)));
+		return (ft_printf_d(va_arg(ap, int)));
 	if (c == 'u')
 		return (ft_printf_u(va_arg(ap, unsigned int)));
 	if (c == 'x')
