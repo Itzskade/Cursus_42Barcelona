@@ -43,10 +43,10 @@ int	main(void)
 	len = ft_printf("Unsigned char: %u\n", u);
 	ft_printf("Se imprimieron %d caracteres.\n", len);
 
-	len = ft_printf("hex: %x\n", x, 0);
+	len = ft_printf("hex: %x\n", x);
 	ft_printf("Se imprimieron %d caracteres.\n", len);
 	
-	len = ft_printf("HEX: %X\n", x, 1);
+	len = ft_printf("HEX: %X\n", x);
 	ft_printf("Se imprimieron %d caracteres.\n", len);
 
 	len = ft_printf("Pointer: %p\n", p);
@@ -71,10 +71,10 @@ int	main(void)
 	len = printf("Unsigned char: %u\n", u);
 	printf("Se imprimieron %d caracteres.\n", len);
 
-	len = printf("hex: %x\n", x, 0);
+	len = printf("hex: %x\n", x);
 	printf("Se imprimieron %d caracteres.\n", len);
 	
-	len = printf("HEX: %X\n", x, 1);
+	len = printf("HEX: %X\n", x);
 	printf("Se imprimieron %d caracteres.\n", len);
 
 	len = printf("Pointer: %p\n", p);
