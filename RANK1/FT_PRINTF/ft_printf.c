@@ -48,7 +48,7 @@ int		ft_printf(char const *format, ...)
 			len += ft_format(*format, ap);
 		}
 		else
-			len += write(1, format, 1);
+			len += ft_printf_c(*format);
 		format++;
 	}
 	va_end(ap);
