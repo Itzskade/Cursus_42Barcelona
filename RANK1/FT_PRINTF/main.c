@@ -17,10 +17,12 @@ int	main(void)
 {
 	char			c = 'c';
 	char			*s = "Hola Mundo";
+	char			*s1 = NULL;
 	int				d = -42;
 	unsigned int	u = 4294967295;
 	int				x = 3735928559;
 	void			*p = s;
+	void			*p1 = s1;
 
 	int len;
 
@@ -32,6 +34,9 @@ int	main(void)
 	ft_printf("Se imprimieron %d caracteres.\n", len);
 
 	len = ft_printf("String: %s\n", s);
+	ft_printf("Se imprimieron %d caracteres.\n", len);
+	
+	len = ft_printf("String: %s\n", s1);
 	ft_printf("Se imprimieron %d caracteres.\n", len);
 
 	len = ft_printf("Digit: %d\n", d);
@@ -50,7 +55,10 @@ int	main(void)
 	ft_printf("Se imprimieron %d caracteres.\n", len);
 
 	len = ft_printf("Pointer: %p\n", p);
-	ft_printf("Se imprimieron %d caracteres.\n\n", len);
+	ft_printf("Se imprimieron %d caracteres.\n", len);
+	
+	len = printf("Pointer: %p\n", p1);
+	printf("Se imprimieron %d caracteres.\n\n", len);
 
 	printf("+=================+\n");
 	printf("| ORIGINAL PRINTF |\n");
@@ -78,5 +86,8 @@ int	main(void)
 	printf("Se imprimieron %d caracteres.\n", len);
 
 	len = printf("Pointer: %p\n", p);
+	printf("Se imprimieron %d caracteres.\n", len);
+
+	len = printf("Pointer: %p\n", p1);
 	printf("Se imprimieron %d caracteres.\n", len);
 }
