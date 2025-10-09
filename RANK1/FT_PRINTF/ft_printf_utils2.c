@@ -6,13 +6,13 @@
 /*   By: rmarin-n <rmarin-n@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 12:58:16 by rmarin-n          #+#    #+#             */
-/*   Updated: 2025/10/06 13:53:21 by rmarin-n         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:32:52 by rmarin-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		ft_printf_x(unsigned int x, int up)
+int	ft_printf_x(unsigned long x, int up)
 {
 	char	*base;
 	char	c;
@@ -29,7 +29,7 @@ int		ft_printf_x(unsigned int x, int up)
 	return (count);
 }
 
-int		ft_printf_p(void *p)
+int	ft_printf_p(void *p)
 {
 	int		count;
 

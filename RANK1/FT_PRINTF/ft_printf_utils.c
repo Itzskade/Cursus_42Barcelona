@@ -12,14 +12,14 @@
 
 #include "ft_printf.h"
 
-int		ft_printf_c(char c)
+int	ft_printf_c(char c)
 {
 	return (write(1, &c, 1));
 }
 
-int		ft_printf_s(char *s)
+int	ft_printf_s(char *s)
 {
-	int 	count;
+	int	count;
 
 	if (!s)
 		return (ft_printf_s("(null)"));
@@ -29,12 +29,12 @@ int		ft_printf_s(char *s)
 	return (count);
 }
 
-int		ft_printf_d(int d)
+int	ft_printf_d(int d)
 {
 	int		count;
 	long	l;
 	char	c;
-	
+
 	l = d;
 	count = 0;
 	if (l < 0)
@@ -49,11 +49,11 @@ int		ft_printf_d(int d)
 	return (count);
 }
 
-int		ft_printf_u(unsigned int u)
+int	ft_printf_u(unsigned int u)
 {
-	int 	count;
+	int		count;
 	char	c;
-	
+
 	count = 0;
 	if (u > 9)
 		count += ft_printf_u(u / 10);
