@@ -236,7 +236,7 @@ int	main(void)
 	
 	char xor_cipher1(unsigned int i, char c) {
 		(void)i;
-		unsigned char key = (32 + 7) % 256;
+		unsigned char key = (32 + 7);
 		c ^= key;
 		return (c);
 	}
@@ -258,7 +258,7 @@ int	main(void)
 
 	void xor_cipher2(unsigned int i, char *c) {
 		(void)i;
-		unsigned char key = (42 + 17) % 256;
+		unsigned char key = (42 + 17);
 		*c ^= key;
 	}
 	char str1[] = "XorCipher";
