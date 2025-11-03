@@ -32,7 +32,7 @@ char	*read_until_line(int fd, char *stash)
 		free(stash);
 		stash = tmp;
 		if (!stash)
-			return (free(buffer), NULL);
+			return (free(buffer), free(tmp) NULL);
 	}
 	free(buffer);
 	return (stash);
@@ -81,6 +81,8 @@ char	*get_next_line(int fd)
 	static char	*stash[FD_MAX];
 	char		*line;
 
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > FD_MAX)
+		return (NULL);
 	if (!stash[fd])
 		stash[fd] = ft_strdup("");
 	stash[fd] = read_until_line(fd, stash[fd]);
