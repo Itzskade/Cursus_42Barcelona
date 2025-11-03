@@ -32,7 +32,7 @@ char	*read_until_line(int fd, char *stash)
 		free(stash);
 		stash = tmp;
 		if (!stash)
-			return (free(buffer), NULL);
+			return (free(buffer), free(tmp), NULL);
 	}
 	free(buffer);
 	return (stash);
