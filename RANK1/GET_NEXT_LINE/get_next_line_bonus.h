@@ -18,7 +18,7 @@
 # endif
 
 # ifndef FD_MAX
-#  define FD_MAX 3
+#  define FD_MAX 16
 # endif
 
 # include <stdlib.h>
