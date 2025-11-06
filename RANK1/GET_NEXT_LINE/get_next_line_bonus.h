@@ -31,6 +31,7 @@
 char	*read_until_line(int fd, char *stash);
 char	*extract_line(char *stash);
 char	*save_rest(char *stash);
+char  *free_strjoin(char *s1, char *s2);
 char	*get_next_line(int fd);
 /* +=====================+ 
  * | GET_NEXT_LINE_UTILS |
