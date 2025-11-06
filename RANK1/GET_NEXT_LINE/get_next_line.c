@@ -12,6 +12,44 @@
 
 #include "get_next_line.h"
 
+char	*save_rest(char	*stash)
+{
+	char	*rest;
+	size_t	len;
+	size_t	start;
+
+	start = 0;
+	if (!stash || !stash[start])
+		return (NULL);
+	while (stash[start] && stash[start] != '\n')
+		start++;
+	if (stash[start] == '\n')
+		start++;
+	len = ft_strlen(stash) - start;
+	rest = ft_substr(stash, start, len);
+	free(stash);
+	stash = NULL;
+	return (rest);
+}
+
+char	*extract_line(char *stash)
+{
+	char	*ptr;
+	char	*line;
+	size_t	len;
+
+	if (!stash || !*stash)
+		return (NULL);
+	ptr = stash;
+	while (*ptr && *ptr != '\n')
+		ptr++;
+	if (*ptr == '\n')
+		ptr++;
+	len = ptr - stash;
+	line = ft_substr(stash, 0, len);
+	return (line);
+}
+
 char	*read_until_line(int fd, char *stash)
 {
 	char	*buffer;
@@ -36,44 +74,6 @@ char	*read_until_line(int fd, char *stash)
 	}
 	free(buffer);
 	return (stash);
-}
-
-char	*extract_line(char *stash)
-{
-	char	*ptr;
-	char	*line;
-	size_t	len;
-
-	if (!stash || !*stash)
-		return (NULL);
-	ptr = stash;
-	while (*ptr && *ptr != '\n')
-		ptr++;
-	if (*ptr == '\n')
-		ptr++;
-	len = ptr - stash;
-	line = ft_substr(stash, 0, len);
-	return (line);
-}
-
-char	*save_rest(char	*stash)
-{
-	char	*rest;
-	size_t	len;
-	size_t	start;
-
-	start = 0;
-	if (!stash || !stash[start])
-		return (NULL);
-	while (stash[start] && stash[start] != '\n')
-		start++;
-	if (stash[start] == '\n')
-		start++;
-	len = ft_strlen(stash) - start;
-	rest = ft_substr(stash, start, len);
-	free(stash);
-	stash = NULL;
-	return (rest);
 }
 
 char	*get_next_line(int fd)
