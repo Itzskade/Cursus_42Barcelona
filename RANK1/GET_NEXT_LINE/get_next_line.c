@@ -12,6 +12,16 @@
 
 #include "get_next_line.h"
 
+char *free_strjoin(char *stash, char *buffer) 
+{
+    char *new_stash;
+
+
+    new_stash = ft_strjoin(stash, buffer); 
+    free(stash); 
+    return (new_stash); 
+}
+
 char	*save_rest(char	*stash)
 {
 	char	*rest;
@@ -53,7 +63,6 @@ char	*extract_line(char *stash)
 char	*read_until_line(int fd, char *stash)
 {
 	char	*buffer;
-	char	*tmp;
 	ssize_t	bytes;
 
 	buffer = malloc(BUFFER_SIZE + 1);
@@ -63,14 +72,12 @@ char	*read_until_line(int fd, char *stash)
 	while (!ft_strchr(stash, '\n') && bytes > 0)
 	{
 		bytes = read(fd, buffer, BUFFER_SIZE);
-		if (bytes == -1)
+		if (bytes < 0)
 			return (free(buffer), NULL);
 		buffer[bytes] = '\0';
-		tmp = ft_strjoin(stash, buffer);
-		free(stash);
-		stash = tmp;
+		stash = free_strjoin(stash, buffer);
 		if (!stash)
-			return (free(buffer), free(tmp), NULL);
+			return (free(buffer), NULL);
 	}
 	free(buffer);
 	return (stash);
