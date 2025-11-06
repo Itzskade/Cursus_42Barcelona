@@ -16,7 +16,6 @@ char *free_strjoin(char *stash, char *buffer)
 {
     char *new_stash;
 
-
     new_stash = ft_strjoin(stash, buffer); 
     free(stash); 
     return (new_stash); 
