@@ -29,7 +29,7 @@ char *save_rest(char *stash)
 	i = 0;
     while (stash[i] && stash[i] != '\n')
         i++;
-    if (stash[i] != '\n')
+    if (stash[i] != '\n' || !stash[i + 1])
         return (free(stash), NULL);
     rest = ft_strdup(stash + i + 1);
     free(stash);
