@@ -13,18 +13,32 @@
 #include "get_next_line_bonus.h"
 #include <stdio.h>
 
-int	main(void)
+int     main(int ac, char **av)
 {
-	int		fd;
-	int		fd2;
-
-	fd = open("test.txt", O_RDONLY);
-	fd2 = open("test2.txt", O_RDONLY);
-	printf("%s", get_next_line(fd));
-	printf("%s", get_next_line(fd2));
-	printf("%s", get_next_line(fd));
-	printf("%s", get_next_line(fd2));
-	printf("%s", get_next_line(fd));
-	printf("%s", get_next_line(fd2));
-	return (0);
+	int     fd;
+    char    *line;
+    int     i;
+	
+	if (ac < 2)
+        return (1);
+    i = 1;
+    while (i < ac)
+    {
+        fd = open(av[i], O_RDONLY);
+        if (fd < 0)
+        {
+            i++;
+            continue;
+        }
+        line = get_next_line(fd);
+        while (line)
+        {
+            printf("%s", line);
+            free(line);
+            line = get_next_line(fd);
+        }
+        close(fd);
+        i++;
+    }
+    return (0);
 }
