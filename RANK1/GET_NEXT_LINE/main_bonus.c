@@ -13,32 +13,54 @@
 #include "get_next_line_bonus.h"
 #include <stdio.h>
 
-int     main(int ac, char **av)
+int main(void)
 {
-	int     fd;
-    char    *line;
-    int     i;
-	
-	if (ac < 2)
-        return (1);
-    i = 1;
-    while (i < ac)
-    {
-        fd = open(av[i], O_RDONLY);
-        if (fd < 0)
-        {
-            i++;
-            continue;
-        }
-        line = get_next_line(fd);
-        while (line)
-        {
-            printf("%s", line);
-            free(line);
-            line = get_next_line(fd);
-        }
-        close(fd);
-        i++;
-    }
-    return (0);
+        int fd1, fd2, fd3;
+        char *line;
+
+        fd1 = open("test.txt", O_RDONLY);
+        fd2 = open("test2.txt", O_RDONLY);
+        fd3 = open("test3.txt", O_RDONLY);
+
+        line = get_next_line(fd1);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd2);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd3);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd1);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd2);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd3);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd1);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd2);
+        printf("%s", line);
+        free(line);
+
+        line = get_next_line(fd3);
+        printf("%s", line);
+        free(line);
+
+        close(fd1);
+        close(fd2);
+        close(fd3);
+
+        return (0);
 }
