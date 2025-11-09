@@ -1,3 +1,0 @@
-Get next line debe\nFuncionar
-Porfavoor\n\nFunciona
-\n\n
