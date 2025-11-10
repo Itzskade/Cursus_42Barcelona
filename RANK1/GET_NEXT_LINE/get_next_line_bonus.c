@@ -77,7 +77,7 @@ char	*read_until_line(int fd, char *stash)
 
 char	*get_next_line(int fd)
 {
-	static char	*stash[FD_MAX] = {0};
+	static char	*stash[FD_MAX];
 	char		*line;
 
 	if (fd < 0 || fd >= FD_MAX || BUFFER_SIZE <= 0)
