@@ -57,21 +57,18 @@ char	*read_until_line(int fd, char *stash)
 	buffer = malloc(BUFFER_SIZE + 1);
 	if (!buffer)
 		return (free(stash), NULL);
-	while (1)
+	bytes = 1;
+	while (!ft_strchr(buffer, '\n') && bytes > 0)
 	{
 		bytes = read(fd, buffer, BUFFER_SIZE);
-		if (bytes <= 0)
-			break ;
+		if (bytes < 0)
+			return (free(stash), free(buffer), NULL);
 		buffer[bytes] = '\0';
 		stash = free_strjoin(stash, buffer);
 		if (!stash)
 			return (free(buffer), NULL);
-		if (ft_strchr(buffer, '\n'))
-			break ;
 	}
 	free(buffer);
-	if (bytes < 0)
-		return (free(stash), NULL);
 	return (stash);
 }
 
