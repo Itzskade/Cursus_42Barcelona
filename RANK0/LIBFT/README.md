@@ -82,6 +82,8 @@ The project reinforces deep understanding of memory management, pointers, string
 | B8 | `ft_lstiter` | Applies function to each element | `ft_lstiter.c` |
 | B9 | `ft_lstmap` | Maps function over list | `ft_lstmap.c` |
 
+> ⚠️ **Warning** Bonus functions **must** be in separate files with the suffix `_bonus.c`  
+> They are **declared in `libft.h`** (no separate `_bonus.h` file)
 ---
 
 ## Project Status
