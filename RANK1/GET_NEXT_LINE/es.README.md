@@ -32,7 +32,7 @@ Incluye **bonus**: soporte para **múltiples descriptores de archivo** usando un
 | `get_next_line` | Gestiona **múltiples descriptores** a la vez<br>(usa un **único array estático**) | `get_next_line_bonus.c`<br>`get_next_line_utils_bonus.c` |
 
 > ⚠️ **Atención** Las funciones bonus **deben** estar en archivos separados con el sufijo `_bonus.c`  
-> Se **declaran en `_bonus.h`**
+> Se **declaran en un archivo `_bonus.h`**
 
 ---
 ## 📋 Estado del proyecto
