@@ -129,18 +129,26 @@ Si completas la parte obligatoria perfectamente, puedes implementar funciones pa
 
 ---
 
-### 🧼 Gestión de memoria
+### 🧪 Gestión de memoria
 
 - No se permiten leaks de memoria.  
 - Toda memoria dinámica debe ser liberada adecuadamente.  
 - Comportamientos indefinidos como segfaults, double free o bus errors resultan en 0 en la evaluación.
 
 ---
+## 📐 Pautas de estilo
 
-### 🧪 Recomendaciones
+- Máximo 25 líneas por función
+- Máximo 4 parámetros por función
+- Máximo 5 variables por función
+- Indentación con tabuladores
+- Sin variables globales
+- Una instrucción por línea
+
+---
+### 📌 Recomendaciones
 
 - Crea programas de prueba para verificar el comportamiento de tus funciones.  
-- Puedes usarlos durante tu evaluación.  
 - Verifica que todos los archivos estén correctamente nombrados y en la raíz del repositorio.
 
 ---
