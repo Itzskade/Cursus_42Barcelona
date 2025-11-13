@@ -31,7 +31,15 @@ Includes **bonus**: support for **multiple file descriptors** using a static arr
 | `get_next_line` | Handles **multiple file descriptors** at once<br>(uses a **single static array**) | `get_next_line_bonus.c`<br>`get_next_line_utils_bonus.c` |
 
 ---
-## Testing Tips
+## Project Status
+
+| Part      | Status     | Completed | Submitted | Validation |
+|-----------|------------|-----------|-----------|------------|
+| Mandatory | Completed  | Yes       | Yes       | 100%       |
+| Bonus     | Completed  | Yes       | Yes       | 125%       |
+
+---
+## 🧪 Testing Tips
 - Use gnl-tester and custom mains
 - Test with: empty files, no newline, `read(0)`, large files
 - Test bonus: open 10+ FDs and alternate reads
@@ -39,7 +47,7 @@ Includes **bonus**: support for **multiple file descriptors** using a static arr
 - Check for memory leaks and double free
 
 ---
-## Style Guidelines
+## 📐 Style Guidelines
 - One static variable only
 - Max 25 lines per function
 - Max 4 parameters per function
@@ -49,7 +57,7 @@ Includes **bonus**: support for **multiple file descriptors** using a static arr
 - Free all mallocs
 
 ---
-## Recommendations
+## 📌 Recommendations
 - Use `static char *buffer[FD_MAX]` for bonus
 - Or use a linked list (more advanced)
 - Handle read errors and EOF
@@ -57,21 +65,13 @@ Includes **bonus**: support for **multiple file descriptors** using a static arr
 - Never use `lseek()`
 
 ---
-## Project Status
-
-| Part      | Status     | Completed | Submitted | Validation |
-|-----------|------------|-----------|-----------|------------|
-| Mandatory | Completed  | Yes       | Yes       | 100%       |
-| Bonus     | Completed  | Yes       | Yes       | 125%       |
-
----
-## License
+## 📜 License
 This project is part of the 42 curriculum and is submitted for evaluation. Code may be reused for educational purposes.
 
 ---
-## Author
+## 🙋 Author
 Developed during the **42 Common Core** as a file reading challenge.
 
 ---
-## Contact
+## 📧 Contact
 rmarin-n@student.42barcelona.com
