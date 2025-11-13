@@ -24,7 +24,7 @@ The project reinforces deep understanding of memory management, pointers, string
 
 ## 📁 Exercise Table
 
-### Mandatory Part
+### Part 1 - Libc Functions
 
 | # | Function | Description | File |
 |---|--------|-------------|------|
@@ -52,7 +52,7 @@ The project reinforces deep understanding of memory management, pointers, string
 | 23 | `ft_calloc` | Allocates and zeros memory | `ft_calloc.c` |
 | 24 | `ft_strdup` | Duplicates a string | `ft_strdup.c` |
 
-### Additional Functions
+### Part 2 - Additional Functions
 
 | # | Function | Description | File |
 |---|--------|-------------|------|
@@ -81,6 +81,15 @@ The project reinforces deep understanding of memory management, pointers, string
 | B7 | `ft_lstclear` | Deletes entire list | `ft_lstclear.c` |
 | B8 | `ft_lstiter` | Applies function to each element | `ft_lstiter.c` |
 | B9 | `ft_lstmap` | Maps function over list | `ft_lstmap.c` |
+
+---
+
+## Project Status
+
+| Part         | Status     | Completed | Submitted | Validation |
+|--------------|------------|-----------|-----------|------------|
+| Mandatory    | Completed  | Yes       | Yes       | 100%       |
+| Bonus        | Completed  | Yes       | Yes       | 125%       |
 
 ---
 
