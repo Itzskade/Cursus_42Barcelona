@@ -116,8 +116,8 @@ Si completas la parte obligatoria perfectamente, puedes implementar funciones pa
 | ft_lstiter      | Aplica una función a cada nodo                             |
 | ft_lstmap       | Crea una nueva lista aplicando una función a cada nodo    |
 
-> ⚠️ Los bonus deben estar en archivos separados con sufijo `_bonus.c` y `_bonus.h`.
-
+> ⚠️ **Atención** Las funciones bonus **deben** estar en archivos separados con el sufijo `_bonus.c`  
+> Se **declaran en `libft.h`** (no se permite un archivo `_bonus.h` separado)
 ---
 
 ## Estado del Proyecto
