@@ -20,12 +20,12 @@ Incluye **bonus**: soporte para **múltiples descriptores de archivo** usando un
 ---
 ## 📁 Tabla de ejercicios
 
-### Parte Obligatoria
+### Parte obligatoria
 | Función         | Descripción                                      | Archivos                              |
 |-----------------|--------------------------------------------------|---------------------------------------|
 | `get_next_line` | Devuelve una línea de un descriptor de archivo   | `get_next_line.c`<br>`get_next_line_utils.c` |
 
-### Parte Bonus
+### Parte bonus
 | Función         | Descripción                                      | Archivos                                          |
 |-----------------|--------------------------------------------------|---------------------------------------------------|
 | `get_next_line` | Gestiona **múltiples descriptores** a la vez<br>(usa un **único array estático**) | `get_next_line_bonus.c`<br>`get_next_line_utils_bonus.c` |
