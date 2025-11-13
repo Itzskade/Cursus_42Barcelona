@@ -45,7 +45,7 @@ The goal is to master variadic functions, format parsing, and type-safe output h
 ## 🧪 Testing Tips
     - Use Printf Testers, and custom mains
     - Test edge cases
-    - Use valgrind: `valgrind --leak-check=full ./test`
+    - Use valgrind: valgrind --leak-check=full ./test
     - Compare output and return value with real printf
 
 ---
@@ -59,10 +59,10 @@ The goal is to master variadic functions, format parsing, and type-safe output h
 
 ---
 ## 📌 Recommendations
-    - Start with `%c` and `%s`
+    - Start with %c and %s
     - Implement one conversion at a time
     - Test immediately after each feature
-    - Use `va_arg`, `va_start`, `va_end` correctly
+    - Use va_arg, va_start, va_end correctly
 
 ---
 ## 📜 License
