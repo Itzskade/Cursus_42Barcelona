@@ -120,6 +120,15 @@ Si completas la parte obligatoria perfectamente, puedes implementar funciones pa
 
 ---
 
+## Estado del Proyecto
+
+| Parte         | Estado      | Completado | Entregado | Validación |
+|---------------|-------------|------------|-----------|------------|
+| Obligatoria   | Completado  | Sí         | Sí        | 100%       |
+| Bonus         | Completado  | Sí         | Sí        | 125%       |
+
+---
+
 ### 🧼 Gestión de memoria
 
 - No se permiten leaks de memoria.  
