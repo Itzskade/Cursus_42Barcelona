@@ -32,7 +32,7 @@ Includes **bonus**: support for **multiple file descriptors** using a static arr
 | `get_next_line` | Handles **multiple file descriptors** at once<br>(uses a **single static array**) | `get_next_line_bonus.c`<br>`get_next_line_utils_bonus.c` |
 
 > ⚠️ **Warning** Bonus functions **must** be in separate files with the suffix `_bonus.c`  
-> They are **declared in `libft.h`** (no separate `_bonus.h` file)
+> They are **declared in separate `_bonus.h` file`**
 
 ---
 ## Project Status
