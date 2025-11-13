@@ -1,3 +1,9 @@
+<p align="right">
+  <a href="README.md">
+    <img src="https://img.shields.io/badge/English-README-blue?style=for-the-badge" alt="English README" />
+  </a>
+</p>
+
 # 📚 Libft – Tu primera librería en C
 
 ## 🧾 Descripción
