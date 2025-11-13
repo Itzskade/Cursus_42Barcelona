@@ -5,8 +5,9 @@
 </p>
 
 # 💻 Project get_next_line
-This repository contains the implementation of **get_next_line**, a 42 project that reads a line from a file descriptor, even if the file is large or read in small chunks.
 
+## 🧾 Description
+This repository contains the implementation of **get_next_line**, a 42 project that reads a line from a file descriptor, even if the file is large or read in small chunks.
 Includes **bonus**: support for **multiple file descriptors** using a static array or linked list.
 
 ---
