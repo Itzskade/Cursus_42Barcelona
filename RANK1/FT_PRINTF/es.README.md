@@ -43,7 +43,7 @@ El objetivo es dominar funciones variádicas, análisis de formatos y manejo seg
 | Bonus     | No iniciado  | No         | No        | 0%         |
 
 ---
-## 🧪 Consejos de prueba
+## 🧪 Consejos de pruebas
 
 - Usa testers de Printf y mains personalizados
 - Prueba casos límite
