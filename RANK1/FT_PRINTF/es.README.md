@@ -45,29 +45,28 @@ El objetivo es dominar funciones variádicas, análisis de formatos y manejo seg
 ---
 ## 🧪 Consejos de pruebas
 
-- Usa testers de Printf y mains personalizados
-- Prueba casos límite
-- Usa valgrind: `valgrind --leak-check=full ./test`
-- Compara salida y valor de retorno con el `printf` real
+    - Usa testers de Printf y mains personalizados
+    - Prueba casos límite
+    - Usa valgrind: `valgrind --leak-check=full ./test`
+    - Compara salida y valor de retorno con el `printf` real
 
 ---
 ## 📐 Normas de estilo
 
-- Máximo 25 líneas por función
-- Máximo 4 parámetros por función
-- Máximo 5 variables por función
-- Indentación con tabuladores
-- Sin variables globales
-- Una instrucción por línea
-- Manejo claro de errores (retornar -1 en error de `write`)
+    - Máximo 25 líneas por función
+    - Máximo 4 parámetros por función
+    - Máximo 5 variables por función
+    - Indentación con tabuladores
+    - Sin variables globales
+    - Una instrucción por línea
 
 ---
 ## 📌 Recommendaciones
 
-- Comienza con `%c` y `%s`
-- Implementa una conversión a la vez
-- Prueba inmediatamente tras cada funcionalidad
-- Usa `va_arg`, `va_start`, `va_end` correctamente
+    - Comienza con `%c` y `%s`
+    - Implementa una conversión a la vez
+    - Prueba inmediatamente tras cada funcionalidad
+    - Usa `va_arg`, `va_start`, `va_end` correctamente
 
 ---
 ## 📜 Licencia
