@@ -47,8 +47,8 @@ El objetivo es dominar funciones variádicas, análisis de formatos y manejo seg
 
     - Usa testers de Printf y mains personalizados
     - Prueba casos límite
-    - Usa valgrind: `valgrind --leak-check=full ./test`
-    - Compara salida y valor de retorno con el `printf` real
+    - Usa valgrind: valgrind --leak-check=full ./test
+    - Compara salida y valor de retorno con el printf real
 
 ---
 ## 📐 Normas de estilo
@@ -63,10 +63,10 @@ El objetivo es dominar funciones variádicas, análisis de formatos y manejo seg
 ---
 ## 📌 Recommendaciones
 
-    - Comienza con `%c` y `%s`
+    - Comienza con %c y %s
     - Implementa una conversión a la vez
     - Prueba inmediatamente tras cada funcionalidad
-    - Usa `va_arg`, `va_start`, `va_end` correctamente
+    - Usa va_arg, va_start, va_end correctamente
 
 ---
 ## 📜 Licencia
