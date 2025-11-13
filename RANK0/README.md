@@ -31,7 +31,6 @@ The project reinforces deep understanding of memory management, pointers, string
 | 01 | `ft_memset` | Fills memory with a constant byte | `ft_memset.c` |
 | 02 | `ft_bzero` | Zeros out a memory area | `ft_bzero.c` |
 | 03 | `ft_memcpy` | Copies memory area | `ft_memcpy.c` |
-| 04 | `ft_memccpy` | Copies memory until character found | `ft_memccpy.c` |
 | 05 | `ft_memmove` | Copies memory safely (handles overlap) | `ft_memmove.c` |
 | 06 | `ft_memchr` | Locates byte in memory | `ft_memchr.c` |
 | 07 | `ft_memcmp` | Compares memory areas | `ft_memcmp.c` |
@@ -63,10 +62,11 @@ The project reinforces deep understanding of memory management, pointers, string
 | 28 | `ft_split` | Splits string by delimiter | `ft_split.c` |
 | 29 | `ft_itoa` | Converts integer to string | `ft_itoa.c` |
 | 30 | `ft_strmapi` | Applies function to each char | `ft_strmapi.c` |
-| 31 | `ft_putchar_fd` | Outputs char to fd | `ft_putchar_fd.c` |
-| 32 | `ft_putstr_fd` | Outputs string to fd | `ft_putstr_fd.c` |
-| 33 | `ft_putendl_fd` | Outputs string + newline | `ft_putendl_fd.c` |
-| 34 | `ft_putnbr_fd` | Outputs number to fd | `ft_putnbr_fd.c` |
+| 31 | `ft_striteri` | Applies function to each char with index | `ft_striteri.c` |
+| 32 | `ft_putchar_fd` | Outputs char to fd | `ft_putchar_fd.c` |
+| 33 | `ft_putstr_fd` | Outputs string to fd | `ft_putstr_fd.c` |
+| 34 | `ft_putendl_fd` | Outputs string + newline | `ft_putendl_fd.c` |
+| 35 | `ft_putnbr_fd` | Outputs number to fd | `ft_putnbr_fd.c` |
 
 ### Bonus Part ⭐
 
