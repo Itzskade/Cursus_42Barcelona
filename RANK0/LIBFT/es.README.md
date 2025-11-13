@@ -131,33 +131,33 @@ Si completas la parte obligatoria perfectamente, puedes implementar funciones pa
 
 ### 🧪 Gestión de memoria
 
-- No se permiten leaks de memoria.  
-- Toda memoria dinámica debe ser liberada adecuadamente.  
-- Comportamientos indefinidos como segfaults, double free o bus errors resultan en 0 en la evaluación.
+    - No se permiten leaks de memoria.  
+    - Toda memoria dinámica debe ser liberada adecuadamente.  
+    - Comportamientos indefinidos como segfaults, double free o bus errors resultan en 0 en la evaluación.
 
 ---
 ## 📐 Pautas de estilo
 
-- Máximo 25 líneas por función
-- Máximo 4 parámetros por función
-- Máximo 5 variables por función
-- Indentación con tabuladores
-- Sin variables globales
-- Una instrucción por línea
+    - Máximo 25 líneas por función
+    - Máximo 4 parámetros por función
+    - Máximo 5 variables por función
+    - Indentación con tabuladores
+    - Sin variables globales
+    - Una instrucción por línea
 
 ---
 ### 📌 Recomendaciones
 
-- Crea programas de prueba para verificar el comportamiento de tus funciones.  
-- Verifica que todos los archivos estén correctamente nombrados y en la raíz del repositorio.
+    - Crea programas de prueba para verificar el comportamiento de tus funciones.  
+    - Verifica que todos los archivos estén correctamente nombrados y en la raíz del repositorio.
 
 ---
 
 ### 📦 Evaluación
 
-- Solo se evaluará el contenido del repositorio Git asignado.  
-- La parte bonus solo se evalúa si la parte obligatoria está perfecta.  
-- Deepthought puede evaluar tu trabajo después de la defensa.
+    - Solo se evaluará el contenido del repositorio Git asignado.  
+    - La parte bonus solo se evalúa si la parte obligatoria está perfecta.  
+    - Deepthought puede evaluar tu trabajo después de la defensa.
 
 ---
 
