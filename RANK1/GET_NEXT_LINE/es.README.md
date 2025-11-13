@@ -44,28 +44,28 @@ Incluye **bonus**: soporte para **múltiples descriptores de archivo** usando un
 ---
 ## 🧪 Consejos de pruebas
     - Usa gnl-tester y mains personalizados
-    - Prueba con: archivos vacíos, sin salto de línea, `read(0)`, archivos grandes
+    - Prueba con: archivos vacíos, sin salto de línea, read(0), archivos grandes
     - Prueba bonus: abre 10+ FDs y alterna lecturas
-    - Usa valgrind: `valgrind --leak-check=full ./test`
-    - Verifica fugas de memoria y `double free`
+    - Usa valgrind: valgrind --leak-check=full ./test
+    - Verifica fugas de memoria y double free
 
 ---
 ## 📐 Normas de estilo
-    - Solo una variable `static`
+    - Solo una variable static
     - Máximo 25 líneas por función
     - Máximo 4 parámetros por función
     - Máximo 5 variables por función
     - Indentación con tabuladores
     - Sin variables globales
-    - Liberar todos los `malloc`
+    - Liberar todos los malloc
 
 ---
 ## 📌 Recomendaciones
-    - Usa `static char *buffer[FD_MAX]` para el bonus
+    - Usa static char *buffer[FD_MAX] para el bonus
     - O usa una lista enlazada (más avanzado)
-    - Gestiona errores de `read` y EOF
-    - Prueba con `BUFFER_SIZE = 1`, `9999`, `0` (inválido)
-    - Nunca uses `lseek()`
+    - Gestiona errores de read y EOF
+    - Prueba con BUFFER_SIZE = 1, 9999, 0 (inválido)
+    - Nunca uses lseek()
 
 ---
 ## 📜 Licencia
