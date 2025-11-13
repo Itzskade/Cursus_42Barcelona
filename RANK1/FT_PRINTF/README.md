@@ -43,27 +43,26 @@ The goal is to master variadic functions, format parsing, and type-safe output h
 
 ---
 ## 🧪 Testing Tips
-- Use Printf Testers, and custom mains
-- Test edge cases
-- Use valgrind: `valgrind --leak-check=full ./test`
-- Compare output and return value with real printf
+    - Use Printf Testers, and custom mains
+    - Test edge cases
+    - Use valgrind: `valgrind --leak-check=full ./test`
+    - Compare output and return value with real printf
 
 ---
 ## 📐 Style Guidelines
-- Max 25 lines per function
-- Max 4 parameters per function
-- Max 5 variables per function
-- Use tabs for indentation
-- No global variables
-- One instruction per line
-- Clear error handling (return -1 on write error)
+    - Max 25 lines per function
+    - Max 4 parameters per function
+    - Max 5 variables per function
+    - Use tabs for indentation
+    - No global variables
+    - One instruction per line
 
 ---
 ## 📌 Recommendations
-- Start with `%c` and `%s`
-- Implement one conversion at a time
-- Test immediately after each feature
-- Use `va_arg`, `va_start`, `va_end` correctly
+    - Start with `%c` and `%s`
+    - Implement one conversion at a time
+    - Test immediately after each feature
+    - Use `va_arg`, `va_start`, `va_end` correctly
 
 ---
 ## 📜 License
