@@ -51,7 +51,7 @@ El objetivo es dominar funciones variádicas, análisis de formatos y manejo seg
 - Compara salida y valor de retorno con el `printf` real
 
 ---
-## 📐 Pautas de estilo
+## 📐 Normas de estilo
 
 - Máximo 25 líneas por función
 - Máximo 4 parámetros por función
