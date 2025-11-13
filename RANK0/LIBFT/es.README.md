@@ -120,7 +120,7 @@ Si completas la parte obligatoria perfectamente, puedes implementar funciones pa
 > Se **declaran en `libft.h`** (no se permite un archivo `_bonus.h` separado)
 ---
 
-## 📋 Estado del Proyecto
+## 📋 Estado del proyecto
 
 | Parte         | Estado      | Completado | Entregado | Validación |
 |---------------|-------------|------------|-----------|------------|
