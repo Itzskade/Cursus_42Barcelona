@@ -86,7 +86,7 @@ The project reinforces deep understanding of memory management, pointers, string
 > They are **declared in `libft.h`** (no separate `_bonus.h` file)
 ---
 
-## Project Status
+## 📋 Project Status
 
 | Part         | Status     | Completed | Submitted | Validation |
 |--------------|------------|-----------|-----------|------------|
