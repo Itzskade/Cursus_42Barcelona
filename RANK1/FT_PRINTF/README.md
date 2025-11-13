@@ -5,8 +5,9 @@
 </p>
 
 # 💻 Project ft_printf
-This repository contains the implementation of **ft_printf**, a 42 Common Core project that recreates a simplified version of the standard `printf` function from scratch.
 
+## 🧾 Description
+This repository contains the implementation of **ft_printf**, a 42 Common Core project that recreates a simplified version of the standard `printf` function from scratch.
 The goal is to master variadic functions, format parsing, and type-safe output handling using only `write`, `malloc`, and `free`.
 
 ---
