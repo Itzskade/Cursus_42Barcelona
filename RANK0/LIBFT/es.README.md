@@ -98,7 +98,7 @@ El Makefile no debe hacer relink innecesario.
 
 ---
 
-## ⭐ Parte bonus
+## Parte bonus
 
 Si completas la parte obligatoria perfectamente, puedes implementar funciones para manipular listas enlazadas.
 
