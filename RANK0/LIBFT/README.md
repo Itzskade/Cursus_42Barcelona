@@ -69,7 +69,7 @@ The project reinforces deep understanding of memory management, pointers, string
 | 34 | `ft_putendl_fd` | Outputs string + newline | `ft_putendl_fd.c` |
 | 35 | `ft_putnbr_fd` | Outputs number to fd | `ft_putnbr_fd.c` |
 
-### Bonus Part ⭐
+### Bonus Part 
 
 | # | Function | Description | File |
 |---|--------|-------------|------|
