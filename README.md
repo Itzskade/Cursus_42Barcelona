@@ -4,7 +4,7 @@ sudo apt install lldb
 ```
 ### Compilar con información de depuración
 ```
-gcc -g -O0 programa.c -o programa
+gcc -g3 programa.c -o programa
 ```
 ### Breakpoint en main
 ```
