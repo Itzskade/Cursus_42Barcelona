@@ -50,7 +50,7 @@ El Makefile no debe hacer relink innecesario.
 
 ---
 
-### 🔧 Funciones a implementar (Parte 1 – libc)
+### Funciones a implementar (Parte 1 – libc)
 
 | Función       | Descripción breve                           |
 |---------------|--------------------------------------------|
@@ -80,7 +80,7 @@ El Makefile no debe hacer relink innecesario.
 
 ---
 
-### 🧪 Funciones adicionales (Parte 2)
+### Funciones adicionales (Parte 2)
 
 | Función         | Descripción breve                             |
 |-----------------|----------------------------------------------|
@@ -102,7 +102,7 @@ El Makefile no debe hacer relink innecesario.
 
 Si completas la parte obligatoria perfectamente, puedes implementar funciones para manipular listas enlazadas.
 
-### 🔧 Funciones bonus
+### Funciones bonus
 
 | Función         | Descripción breve                                         |
 |-----------------|----------------------------------------------------------|
