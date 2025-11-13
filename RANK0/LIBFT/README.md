@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# 💻 Project LIBFT
+# 📚 Libft – Your First C Library
 
 This repository contains the implementation of **Libft**, the first major project in the 42 Common Core curriculum. The goal is to recreate a selection of essential functions from the C standard library, plus additional utility functions (including **bonus** linked list management), all from scratch.
 
