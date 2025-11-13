@@ -36,7 +36,6 @@ Includes **bonus**: support for **multiple file descriptors** using a static arr
 
 ---
 ## Project Status
-
 | Part      | Status     | Completed | Submitted | Validation |
 |-----------|------------|-----------|-----------|------------|
 | Mandatory | Completed  | Yes       | Yes       | 100%       |
@@ -44,29 +43,29 @@ Includes **bonus**: support for **multiple file descriptors** using a static arr
 
 ---
 ## 🧪 Testing Tips
-- Use gnl-tester and custom mains
-- Test with: empty files, no newline, `read(0)`, large files
-- Test bonus: open 10+ FDs and alternate reads
-- Use valgrind: `valgrind --leak-check=full ./test`
-- Check for memory leaks and double free
+    - Use gnl-tester and custom mains
+    - Test with: empty files, no newline, `read(0)`, large files
+    - Test bonus: open 10+ FDs and alternate reads
+    - Use valgrind: `valgrind --leak-check=full ./test`
+    - Check for memory leaks and double free
 
 ---
 ## 📐 Style Guidelines
-- One static variable only
-- Max 25 lines per function
-- Max 4 parameters per function
-- Max 5 variables per function
-- Use tabs for indentation
-- No global variables
-- Free all mallocs
+    - One static variable only
+    - Max 25 lines per function
+    - Max 4 parameters per function
+    - Max 5 variables per function
+    - Use tabs for indentation
+    - No global variables
+    - Free all mallocs
 
 ---
 ## 📌 Recommendations
-- Use `static char *buffer[FD_MAX]` for bonus
-- Or use a linked list (more advanced)
-- Handle read errors and EOF
-- Test with `BUFFER_SIZE = 1`, `9999`, `0` (invalid)
-- Never use `lseek()`
+    - Use `static char *buffer[FD_MAX]` for bonus
+    - Or use a linked list (more advanced)
+    - Handle read errors and EOF
+    - Test with `BUFFER_SIZE = 1`, `9999`, `0` (invalid)
+    - Never use `lseek()`
 
 ---
 ## 📜 License
