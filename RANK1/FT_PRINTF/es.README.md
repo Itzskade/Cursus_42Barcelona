@@ -6,8 +6,8 @@
 
 # 💻 Proyecto ft_printf
 
+## 🧾 Descripción
 Este repositorio contiene la implementación de **ft_printf**, un proyecto del *Common Core* de 42 que consiste en recrear una versión simplificada de la función estándar `printf` desde cero.
-
 El objetivo es dominar funciones variádicas, análisis de formatos y manejo seguro de tipos usando únicamente `write`, `malloc` y `free`.
 
 ---
